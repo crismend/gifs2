@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://crismend.github.io/gifs2",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "vite build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && cp -R dist/* ."
   },
   "dependencies": {
     "02-searchgif": "file:",
@@ -26,7 +25,6 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
-    "gh-pages": "^5.0.0",
     "globals": "^15.14.0",
     "vite": "^6.0.5"
   }
